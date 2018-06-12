@@ -1006,6 +1006,10 @@ function startFight () {
 
 	switch (monologCount) {
 		case 1:
+			monologCount++;
+			break;
+			
+		case 2:
 			document.getElementById('horse').style.display = 'block';
 			foundHorse.play();
 			monolog.innerHTML = "<h2>Here is Bucephalus, may you serve him well</h2>" +
@@ -1013,13 +1017,13 @@ function startFight () {
 			monologCount++;
 			break;
 
-		case 2:
+		case 3:
 			monolog.innerHTML = "<h1>Congratulations, you won</h1>" +
 				"<hr><h2>Click anywhere to be taken back to the menu...</h2>";
 			monologCount++;
 			break;
 
-		case 3:
+		case 4:
 			location.href = "happyEnding.html";
 			break;
 	}//switch
