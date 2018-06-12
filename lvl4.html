@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Josh's Cool Horse Thing</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="joshhorse.css">
+			<script src="joshHorse.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+		<body id="screen" onload="beginLvl4()" onclick="startFight()">
+			<div id="lightbox">
+			</div>
+
+			<div class="instructions" id="topBar">
+				<div id="monolog">
+					<h1>HA We meet again</h1><h3><br>So I see you bested my guardian but I don't think that
+						you will be able to beat me!<br>Now grab a weapon and fight me!</h3><hr><h3>
+						Click anywhere to continue</h3>
+				</div>
+			</div>
+
+			<img id="wizard-Lvl4" src="images/wizard.gif" alt="wizard">
+			<img id="horse" src="images/horse.png" alt="A horse">
+
+			<div id="targetDiv">
+				<img class="target" id="target-1" src="images/target.png" alt="A target" onclick="hitWizard()">
+				<img class="target" id="target-2" src="images/target.png" alt="A target" onclick="hitWizard()">
+				<img class="target" id="target-3" src="images/target.png" alt="A target" onclick="hitWizard()">
+				<img class="target" id="target-4" src="images/target.png" alt="A target" onclick="hitWizard()">
+				<img class="target" id="target-5" src="images/target.png" alt="A target" onclick="hitWizard()">
+			</div>
+
+			<div id="healthBar">
+				<img id="healthBarCapLeft" src="images/barRed_horizontalLeft.png" alt="Health Bar Cap">
+				<img id="healthBar1" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar2" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar3" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar4" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar5" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar6" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar7" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBar8" src="images/barRed_horizontalMid.png" alt="Health Bar Piece">
+				<img id="healthBarCapRight" src="images/barRed_horizontalRight.png" alt="Health Bar Cap">
+			</div>
+
+
+			<div id="bottomBar">
+				<div id="slot1" onclick="toolChoice(1)"><div id="slot1Img"></div></div>
+				<div id="slot2" onclick="toolChoice(0)"><div id="slot2Img"></div></div>
+				<div id="slot3" onclick="toolChoice(2)"><div id="slot3Img"></div></div>
+				<div id="goal">
+					<div id="goalText"></div>
+				</div>
+			</div>
+		</body>
+	</html>

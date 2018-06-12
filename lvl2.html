@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Josh's Cool Horse Thing</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="joshhorse.css">
+			<script src="joshHorse.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+		<body id="screen" onload='beginLvl2()' onclick="wizardMonolog()">
+			<div id="lightbox">
+				<img id="compass" src="images/sprites/compass.png" alt="A compass">
+			</div>
+
+			<div class="instructions" id="topBar">
+				<div id="monolog" onkeydown="wizardMonolog()">
+					<h1>So, we finally meet!!</h1>
+					<h4>The path of the righteous man is beset on all sides by the iniquities of
+						the selfish and the tyranny of evil men. Blessed is he who, in the name of
+						charity and good will, shepherds the weak through the valley of darkness,
+						for he is truly his brother's keeper and the finder of lost children. And
+						I will strike down upon thee with great vengeance and furious anger those
+						who would attempt to poison and destroy My brothers. And you will know My
+						name is the Lord when I lay My vengeance upon thee...........</h4>
+						<hr>
+						<h4>Click anywhere...</h4>
+				</div>
+			</div>
+
+			<img id="Wizard-Lvl2" src="images/wizard.gif" alt="A Wizard">
+			<img id="explosion" src="images/Explosion/explosion00.png" alt="An explosion">
+			<img id="crate-00" src="images/crate.png" alt="A Crate" onclick="breakCrate(0)">
+			<img id="crate-01" src="images/crate.png" alt="A Crate" onclick="breakCrate(1)">
+			<img id="crate-02" src="images/crate.png" alt="A Crate" onclick="breakCrate(2)">
+			<img id="crate-02-Side1" src="images/crate.png" alt="A Crate" onclick="breakCrate(2)">
+			<img id="crate-10" src="images/crate.png" alt="A Crate" onclick="breakCrate(3)">
+			<img id="crate-10-Side2" src="images/crate.png" alt="A Crate" onclick="breakCrate(3)">
+			<img id="crate-11" src="images/crate.png" alt="A Crate" onclick="breakCrate(4)">
+			<img id="crate-11-Side0" src="images/crate.png" alt="A Crate" onclick="breakCrate(4)">
+			<img id="crate-12" src="images/crate.png" alt="A Crate" onclick="breakCrate(5)">
+			<img id="crate-12-Side2" src="images/crate.png" alt="A Crate" onclick="breakCrate(5)">
+			<img id="crate-20" src="images/crate.png" alt="A Crate" onclick="breakCrate(6)">
+			<img id="crate-21" src="images/crate.png" alt="A Crate" onclick=breakCrate(7)>
+			<img id="crate-22" src="images/crate.png" alt="A Crate" onclick="breakCrate(8)">
+
+
+			<div id="bottomBar">
+				<img id="goLeft2" src="images/arrowLeft.png" alt="Left Arrow" onclick="turnLvl2('l')">
+				<img id="goRight2" src="images/arrowRight.png" alt="Right Arrow" onclick="turnLvl2('r')">
+				<div id="slot1" onclick="toolChoice(1)"><div id="slot1Img"></div></div>
+				<div id="slot2" onclick="toolChoice(0)"><div id="slot2Img"></div></div>
+				<div id="slot3" onclick="toolChoice(2)"><div id="slot3Img"></div></div>
+				<div id="goal">
+					<div id="goalText"></div>
+					<div id="lvl3" onclick="lvl3()">Click Here for<br>Level Three</div>
+				</div>
+			</div>
+		</body>
+	</html>

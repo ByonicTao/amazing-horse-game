@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Josh's Cool Horse Thing</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="joshhorse.css">
+			<script src="joshHorse.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+		<body id="screen" onload="beginGame()">
+
+
+			<div id="window" onclick="seeWindow()"></div>
+			<div id="outBarn" onclick="getOutOfBarn()"></div>
+			<img id="lvl1-pickaxe-side1" src="images/sprites/pickaxe.png" alt="pickaxe" onclick="foundItemLvl1('a')">
+			<img id="lvl1-pickaxe-side2" src="images/sprites/pickaxe.png" alt="pickaxe" onclick="foundItemLvl1('a')">
+			<img id="lvl1-hammer-side0" src="images/sprites/hammer.png" alt="hammer">
+			<img id="lvl1-shovel-side2" src="images/sprites/shovel.png" alt="shovel" onclick="foundItemLvl1('c')">
+			<img id="lvl1-sledgeHammer-side0" src="images/sprites/sledgeHammer.png" alt="sledgeHammer">
+			<img id="lvl1-sledgeHammer-side1" src="images/sprites/sledgeHammer.png" alt="sledgeHammer">
+			<img id="lvl1-wrench-side2" src="images/sprites/wrench.png" alt="wrench">
+			<img id="lvl1-saw-side1" src="images/sprites/saw.png" alt="saw">
+			<img id="lvl1-saw-side2" src="images/sprites/saw.png" alt="saw">
+			<img id="lvl1-axe-side1" src="images/sprites/axe.png" alt="axe" onclick="foundItemLvl1('b')">
+			<img id="lvl1-axe-side2" src="images/sprites/axe.png" alt="axe" onclick="foundItemLvl1('b')">
+
+			<div class="instructions" id="topBar">
+				<h2>The Wizard has taken the Horse to his castle.<br>
+					Gather the tools you need and exit the Barn.
+				</h2>
+				<br>
+			</div>
+
+
+			<div id="bottomBar">
+				<img id="goLeft2" src="images/arrowLeft.png" alt="Left Arrow" onclick="turnLvl1('l')">
+				<img id="goLeft1" src="images/arrowLeft.png" alt="Left Arrow" onclick="leftBasic()">
+				<img id="goRight2" src="images/arrowRight.png" alt="Right Arrow" onclick="turnLvl1('r')">
+				<img id="goRight1" src="images/arrowRight.png" alt="Right Arrow" onclick="rightBasic()">
+				<div id="slot1"><div id="slot1Img"></div></div>
+				<div id="slot2"><div id="slot2Img"></div></div>
+				<div id="slot3"><div id="slot3Img"></div></div>
+				<div id="goal">
+					<div id="toBarn" onclick="back2Barn()"><b>CLICK HERE TO<br>GO BACK</b></div>
+					<div id="goalText"><b>Goal:</b> Try and find where the horse has been taken.</div>
+					<div id="goTo2" onclick="lvl2()"><b>Click here<br>For Level Two</b></div>
+				</div>
+			</div>
+		</body>
+	</html>

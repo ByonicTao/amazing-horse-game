@@ -1,0 +1,772 @@
+@font-face {
+	 font-family: Ken_Future;
+	 src: url('kenvector_future_thin.ttf');
+}
+
+html,body {
+    padding:0;
+    margin:0;
+    height:100%;
+		font-family: Ken_Future !important;
+		cursor: url('images/cursor.png'), auto;
+}
+
+body {
+    margin-left:auto;
+}
+
+hr {
+	width:80%;
+	border-color:black !important;
+	border-style:inset !important;
+	border-width:1px !important;
+}
+
+table.borderless td,table.borderless th{
+     border: none !important;
+}
+
+td {
+	background-image: url('images/buttonLongUp.png');
+	background-position:center center;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	width:50%;
+}
+
+td:active {
+	background-image: url('images/buttonLongDown.png');
+	background-position:center center;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+
+.beginScreen {
+	background-image: url("images/barn.jpg");
+	background-size: cover;
+}
+
+.instructions {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	background: #99704F;
+	border:thick inset #AE8565;
+	text-align:center;
+	font-family: Ken_Future;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.site {
+	background-image: url('images/mainBackground.jpg');
+	background-size: cover;
+}
+
+.active {
+	background-image: url('images/slotDown.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.rowtop {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:774px;
+    height:847px;
+    border: 20px groove #AE8565;
+		border-radius: 25px;
+
+}
+
+#myFrame {
+		width:100%;
+		height:100%;
+}
+
+#beginTop{
+	  position:fixed;
+ 	 top:0px;
+ 	 left:0px;
+ 	 width:100%;
+ 	 height:100%;
+ 	 background-color:rgba(0,0,0,0.8);
+}
+
+#clickMe {
+	height:30%;
+	width:40%;
+	background-color: #99704F;
+	left:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60%;
+	border: thick inset #AE8565;
+	border-radius: 25px;
+}
+
+#title {
+	height:40%;
+	width:100%;
+	background-color: #99704F;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0%;
+	border: thick inset #AE8565;
+	border-radius: 0px 0px 25px 25px;
+}
+
+#menu {
+	height:100%;
+	width:40%;
+	background-color: #99704F;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0%;
+	border: thick inset #AE8565;
+	border-radius: 0px 0px 25px 25px;
+}
+
+#menuTable {
+	position:relative;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:50%;
+	width:70%;
+	border:0px thin black;
+	border-top:none;
+	text-align: center;
+	vertical-align: center;
+}
+
+#child {
+	height:100%;
+	width:100%;
+	margin-top:auto;
+	margin-bottom: auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.child {
+	height:100%;
+	width:100%;
+	margin-top:auto;
+	margin-bottom: auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bottomBar {
+	width:100%;
+	height:100px;
+	background-color:#99704F;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	border:thick inset #AE8565;
+	position:absolute;
+	border-style: inset;
+	z-index: 4
+}
+
+#topBar {
+	display:none;
+	z-index: 5;
+}
+
+#slot1, #slot2, #slot3 {
+	height:60px;
+	width: 60px;
+	bottom:15px;
+	position:absolute;
+	display:none;
+	background-image: url('images/slot.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#slot1:active, #slot2:active, #slot3:active {
+	background-image: url('images/slotDown.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#slot1 {
+	left:20px;
+}
+
+#slot1Img {
+	background-image: url('images/sprites/pickaxe.png');
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: 31px 41px;
+	width: 100%;
+	height: 100%;
+}
+
+#slot2 {
+	left:100px;
+}
+
+#slot2Img {
+	left:100px;
+	background-image: url('images/sprites/axe.png');
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: 30px 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#slot3 {
+	left:180px;
+
+}
+
+#slot3Img {
+	background-image: url('images/sprites/shovel.png');
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: 22px 40px;
+	width: 100%;
+	height: 100%;
+}
+
+#goLeft1 {
+	position:absolute;
+	bottom:17px;
+	height:55px;
+	width:55px;
+	right:90px;
+	/*border: thick inset darkorchid;
+	background-color: rgba(255,255,0,0.8);*/
+	background-image: url('images/buttonUp.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#goLeft2 {
+	position:absolute;
+	bottom:17px;
+	height:55px;
+	width:55px;
+	right:90px;
+	/*border: thick inset darkorchid;
+	background-color: rgba(255,255,0,0.8);*/
+	display:none;
+	background-image: url('images/buttonUp.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+
+#goLeft1:active {
+	background-image: url('images/buttonDown.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#goLeft2:active {
+	background-image: url('images/buttonDown.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#goRight1 {
+	position:absolute;
+	height:55px;
+	width:55px;
+	bottom:17px;
+	right:20px;
+	/*border: thick inset darkorchid;
+	background-color: rgba(255,255,0,0.8);*/
+	background-image: url('images/buttonUp.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#goRight2 {
+	position:absolute;
+	height:55px;
+	width:55px;
+	bottom:17px;
+	right:20px;
+	/*border: thick inset darkorchid;
+	background-color: rgba(255,255,0,0.8);*/
+	background-image: url('images/buttonUp.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	display:none;
+}
+
+#goRight1:active {
+	background-image: url('images/buttonDown.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#goRight2:active {
+	background-image: url('images/buttonDown.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#goal {
+	position:absolute;
+	height:55px;
+	width:300px;
+	/*background-color: rgba(255,255,0,0.8);
+	border: thick inset darkorchid;*/
+	background-image: url("images/buttonLongUp.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	bottom:17px;
+	left:255px;
+	text-align: center;
+}
+
+#goTo2 {
+	display: none;
+	width:100%;
+	height:100%;
+}
+
+#goTo2:active {
+	background-image: url("images/buttonLongDown.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#window {
+	position:absolute;
+	height:250px;
+	width:200px;
+	display:none;
+	left:380px;
+	top:80px;
+}
+
+#outBarn {
+	position:absolute;
+	height:100%;
+	width:15%;
+	display:none;
+}
+
+#screen {
+	background-size:cover;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+#container {
+	/*height:700px;*/
+	width:100%;
+	border:thick solid green;
+}
+
+#lvl1-pickaxe-side1 {
+	position:absolute;
+	top:375px;
+	left:375px;
+	width:86px;
+	height:108px;
+}
+
+#lvl1-pickaxe-side2 {
+	position:absolute;
+	width:86px;
+	height:108px;
+	top:375px;
+	left:0px;
+}
+
+#lvl1-hammer-side0 {
+	position:absolute;
+	bottom:70px;
+	left:275px;
+	transform: rotate(80deg);
+}
+
+#lvl1-shovel-side2 {
+	position:absolute;
+	transform: rotate(340deg);
+	right: 50px;
+	top:325px;
+}
+
+#lvl1-sledgeHammer-side0 {
+	position:absolute;
+	transform: rotate(340deg);
+	top: 430px;
+	left: 500px;
+}
+
+#lvl1-sledgeHammer-side1 {
+	position:absolute;
+	transform: rotate(340deg);
+	top: 430px;
+	left: 124px;
+}
+
+#lvl1-wrench-side2 {
+	position:absolute;
+	top:550px;
+	right:50px;
+
+}
+
+#lvl1-saw-side1 {
+	position:absolute;
+	top:500px;
+	left:550px;
+	transform: rotate(60deg);
+}
+
+#lvl1-saw-side2 {
+	position:absolute;
+	top:500px;
+	left:180px;
+	transform: rotate(60deg);
+}
+
+#lvl1-axe-side1 {
+	position:absolute;
+	transform: rotate(90deg);
+	height:90px;
+	width:66px;
+	top:170px;
+	left:550px;
+}
+
+#lvl1-axe-side2 {
+	position:absolute;
+	transform: rotate(90deg);
+	height:90px;
+	width:66px;
+	top:170px;
+	left:178px;
+}
+
+#toBarn {
+	display:none;
+	width:100%;
+	height:100%;
+}
+
+#toBarn:active {
+	background-image: url("images/buttonLongDown.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#Wizard-Lvl2 {
+	position:absolute;
+	top:350px;
+	left:320px;
+	z-index: 4;
+}
+
+#explosion {
+	position:absolute;
+	top:300px;
+	left:260px;
+	width:290px;
+	height:265px;
+	display:none;
+	z-index: 5;
+}
+
+#crate-00, #crate-01, #crate-02, #crate-10, #crate-11, #crate-12, #crate-20, #crate-21, #crate-22, #crate-02-Side1 {
+	position:absolute;
+	height:75px;
+	width:73px;
+}
+
+#crate-11-Side0, #crate-10-Side2, #crate-12-Side2 {
+	position:absolute;
+	height:75px;
+	width:73px;
+}
+
+#crate-00 {
+	top:300px;
+	left:50px;
+}
+
+#crate-01 {
+	top:450px;
+	left:200px;
+}
+
+#crate-02 {
+	top: 500px;
+	left: 400px;
+}
+
+#crate-02-Side1 {
+	top:500px;
+	left:20px;
+}
+
+#crate-10 {
+	top:300px;
+	left:580px;
+}
+
+#crate-11 {
+	top:550px;
+	left:200px;
+}
+
+#crate-11-Side0 {
+	top:550px;
+	left:575px;
+}
+
+#crate-12 {
+	top:180px;
+	left:500px;
+}
+
+#crate-10-Side2 {
+	top:300px;
+	left:200px;
+}
+
+#crate-12-Side2 {
+	top:180px;
+	left:120px;
+}
+
+#crate-20 {
+	top:600px;
+	left:600px;
+}
+
+#crate-21 {
+	top:460px;
+	left:500px;
+}
+
+#crate-22 {
+	top:200px;
+	left:400px;
+}
+
+#lightbox {
+	height:100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	position:fixed;
+	z-index:1
+}
+
+#compass {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50%;
+	display:none;
+}
+
+#lvl3 {
+	display:none;
+}
+
+#chimera {
+	width:258px;
+	height:300px;
+	position:absolute;
+	top:400px;
+	left:250px;
+	z-index: 2;
+}
+
+#door {
+	position:absolute;
+	width:256px;
+	height:384px;
+	top:300px;
+	left:240px;
+}
+
+#submit {
+	display:none;
+}
+
+ .answer {
+	position:absolute;
+	top:300px;
+	height:50px;
+	width:25%;
+	z-index: 3;
+	text-align: center;
+	background-image: url("images/buttonLongUp.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	border:none;
+	display:none;
+ }
+
+ .answer:active {
+	background-image: url("images/buttonLongDown.png");
+ }
+
+ #answer1 {
+	left:40px;
+ }
+
+ #answer2 {
+	left:270px;
+ }
+
+ #answer3 {
+	right:40px;
+ }
+
+ #lvl4GoTo {
+	width:100%;
+	height:100%;
+	display:none;
+ }
+
+#lvl4GoTo:active {
+	background-image: url("images/buttonLongDown.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#fail {
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+#fail:active {
+	background-image: url("images/buttonLongDown.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+#wizard-Lvl4 {
+	position:absolute;
+	top:500px;
+	left:50px;
+	z-index: 5;
+}
+
+.target {
+	height:100px;
+	width:100px;
+	position:absolute;
+	display:block;
+}
+
+#target-1 {
+	top:350px;
+	left:100px;
+}
+
+#target-2 {
+	top:50px;
+	right:100px;
+}
+
+#target-3 {
+	bottom:200px;
+	right:150px;
+}
+
+#target-4 {
+	top:200px;
+	left:350px;
+}
+
+#target-5 {
+	top:75px;
+	left:125px;
+}
+
+#healthBar {
+	position:absolute;
+	left:20px;
+	top:480px;
+	display:none;
+}
+
+#targetDiv {
+	display:none;
+}
+
+#horse {
+	display:none;
+	top:250px;
+	left:200px;
+	z-index: 10;
+	width:275px;
+	height:239px;
+	position:absolute;
+}
+
+.ending {
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	display:none;
+	position:absolute;
+	top:0px;
+	z-index: -1;
+}
+
+#ending0 {
+	background-image: url('images/ending-0.png');
+}
+
+#ending1 {
+	background-image: url('images/ending-1.png');
+}
+
+#ending2 {
+	background-image: url('images/ending-2.png');
+}
+
+#ending3 {
+	background-image: url('images/ending-3.png');
+}
+
+#ending4 {
+	background-image: url('images/ending-4.png');
+}
+
+#ending5 {
+	background-image: url('images/ending-5.png');
+}
+
+#ending6 {
+	background-image: url('images/ending-6.png');
+}
+
+#ending7 {
+	background-image: url('images/ending-7.png');
+}

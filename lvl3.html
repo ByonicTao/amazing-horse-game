@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Josh's Cool Horse Thing</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="joshhorse.css">
+			<script src="joshHorse.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+		<body id="screen" onload='beginLvl3()' onclick="closeTopBar()">
+			<div id="lightbox">
+			</div>
+
+			<div class="instructions" id="topBar">
+				<div id="monolog">
+
+				</div>
+			</div>
+
+			<img id="chimera" src="images/chimera.png" alt="Chimera">
+			<img id="door" src="images/castledoors.png" alt="A door">
+
+			<div class="answer" id="answer1" onclick="answered(1)"></div>
+			<div class="answer" id="answer2" onclick="answered(2)"></div>
+			<div class="answer" id="answer3" onclick="answered(3)"></div>
+
+
+			<div id="bottomBar">
+				<img id="goLeft2" src="images/arrowLeft.png" alt="Left Arrow" onclick="turnLvl3('l')">
+				<img id="goRight2" src="images/arrowRight.png" alt="Right Arrow" onclick="turnLvl3('r')">
+				<div id="slot1" onclick="toolChoice(1)"><div id="slot1Img"></div></div>
+				<div id="slot2" onclick="toolChoice(0)"><div id="slot2Img"></div></div>
+				<div id="slot3" onclick="toolChoice(2)"><div id="slot3Img"></div></div>
+				<div id="goal">
+					<div id="goalText"></div>
+					<div id="lvl4GoTo" onclick="lvl4()"><b>Click here for<br>level four</b></div>
+					<div id="fail" onclick="lvl1()"><b>Start over<br>Click here</b></div>
+				</div>
+			</div>
+		</body>
+	</html>

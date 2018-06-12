@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Josh's Cool Horse Thing</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="joshhorse.css">
+			<script src="joshHorse.js"></script>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head>
+		<body class="beginScreen">
+		<div id="beginTop">
+			<div class="container-fluid">
+				<div class="row">
+					<div onclick="welcome()" id="menu">
+							<img src="images/menu.png" alt="Menu" id="child">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<table id="menuTable" class="table borderless">
+							<tbody>
+								<tr>
+									<td onclick="lvl1()"><b>Level 1</b></td>
+									<td onclick="lvl2()"><b>Level 2</b></td>
+								</tr>
+								<tr>
+									<td onclick="lvl3()"><b>Level 3</b></td>
+									<td onclick="lvl4()"><b>Level 4</b></td>
+								</tr>
+								<tr>
+									<td onclick="startInstruc()"><b>Instructions</b></td>
+									<td onclick="credits()"><b>Credits</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		</body>
+	</html>
