@@ -952,7 +952,8 @@ function wrong () {
 	clickSound.play();
 	document.getElementById('monolog').innerHTML =
 		"<h1>You have been defeated<br>Back to the barn with you!!!</h1>";
-	document.getElementById('goalText').innerHTML = "";
+	document.getElementById('lvl4GoTo').style.display = 'none';
+	document.getElementById('goalText').style.display = 'none';
 
 	button = document.getElementsByClassName('answer');
 	for (i = 0; i < button.length; i++) {
@@ -1038,7 +1039,7 @@ function combat () {
 function startCombatTimer () {
     startTime = new Date();
     startSeconds = startTime.getTime();
-    myVar = setInterval(function(){combatTimer()},100);
+    myVar = setInterval(function(){combatTimer()},1);
 }//startTimer
 
 //executes the animation of the smoke effect
@@ -1051,16 +1052,16 @@ function combatTimer () {
 		target5 = document.getElementById('target-5');
 		console.log((d.getTime() - startSeconds) / 1000);
 	//turns targets visible to invisible
-    if (((d.getTime() - startSeconds) / 1000) === 1) target1.style.display = 'block';
-    if (((d.getTime() - startSeconds) / 1000) === 2) target1.style.display = 'none';
-    if (((d.getTime() - startSeconds) / 1000) === 2) target2.style.display = 'block';
-    if (((d.getTime() - startSeconds) / 1000) === 3) target2.style.display = 'none';
-    if (((d.getTime() - startSeconds) / 1000) === 3) target3.style.display = 'block';
-    if (((d.getTime() - startSeconds) / 1000) === 4) target3.style.display = 'none';
-    if (((d.getTime() - startSeconds) / 1000) === 4) target4.style.display = 'block';
-    if (((d.getTime() - startSeconds) / 1000) === 5) target4.style.display = 'none';
-    if (((d.getTime() - startSeconds) / 1000) === 5) target5.style.display = 'block';
-    if (((d.getTime() - startSeconds) / 1000) === 6) target5.style.display = 'none';
+    if (((d.getTime() - startSeconds) / 1000) >= 1) target1.style.display = 'block';
+    if (((d.getTime() - startSeconds) / 1000) >= 2) target1.style.display = 'none';
+    if (((d.getTime() - startSeconds) / 1000) >= 2) target2.style.display = 'block';
+    if (((d.getTime() - startSeconds) / 1000) >= 3) target2.style.display = 'none';
+    if (((d.getTime() - startSeconds) / 1000) >= 3) target3.style.display = 'block';
+    if (((d.getTime() - startSeconds) / 1000) >= 4) target3.style.display = 'none';
+    if (((d.getTime() - startSeconds) / 1000) >= 4) target4.style.display = 'block';
+    if (((d.getTime() - startSeconds) / 1000) >= 5) target4.style.display = 'none';
+    if (((d.getTime() - startSeconds) / 1000) >= 5) target5.style.display = 'block';
+    if (((d.getTime() - startSeconds) / 1000) >= 6) target5.style.display = 'none';
 	if (((d.getTime() - startSeconds) / 1000) >= 7) stopCombatTimer();
 
 }//myTimer
