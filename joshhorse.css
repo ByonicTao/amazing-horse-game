@@ -13,6 +13,7 @@ html,body {
 
 body {
     margin-left:auto;
+	display:block;
 }
 
 hr {
@@ -678,7 +679,7 @@ td:active {
 	height:100px;
 	width:100px;
 	position:absolute;
-	display:block;
+	display:none;
 }
 
 #target-1 {
